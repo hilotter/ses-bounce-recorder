@@ -8,3 +8,5 @@ cdk.out
 
 .envrc
 !lambda/*.js
+
+src/lambda/handlers/.cache
