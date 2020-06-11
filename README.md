@@ -1,4 +1,8 @@
-# Custom settings
+# SES Bounce Recorder
+
+![bounce_recorder](https://github.com/hilotter/ses-bounce-recorder/raw/master/doc/ses_bounce_recorder.png)
+
+## Custom settings
 
 ```
 export BOUNCE_RECORDER_SNS_TOPIC=ses-notifications
@@ -6,7 +10,7 @@ export WEBHOOK_KEY=webhook_key
 export WEBHOOK_URL=https://your-webhook-url
 ```
 
-# deploy
+## CDK deploy
 
 ```
 yarn
@@ -19,7 +23,7 @@ yarn run cdk diff
 yarn run cdk deploy
 ```
 
-# Add SNS topic to SES notification setting
+## Add SNS topic to SES notification setting
 
 Please set SNS topic subscribe in SES notification manually
 
@@ -28,12 +32,12 @@ Please set SNS topic subscribe in SES notification manually
 
 ![notification](https://user-images.githubusercontent.com/1042519/62696253-ff7bec80-ba12-11e9-9962-4f55d37901f4.png)
 
-# Lambda Test
+## Lambda Test
 
 use `test/lambda_bounce_event.json`
 
 https://docs.aws.amazon.com/ses/latest/DeveloperGuide/notification-contents.html#bounce-object
 
-# Manual Email Test
+## Manual Email Test
 
 https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-simulator.html
