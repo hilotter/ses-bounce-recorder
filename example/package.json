@@ -1,0 +1,9 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "main": "webhook.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

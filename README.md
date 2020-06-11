@@ -41,3 +41,7 @@ https://docs.aws.amazon.com/ses/latest/DeveloperGuide/notification-contents.html
 ## Manual Email Test
 
 https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-simulator.html
+
+## webhook example
+
+see `example/webhook.js`
