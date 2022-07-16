@@ -1,11 +1,12 @@
-import * as cdk from '@aws-cdk/core';
-import * as sns from '@aws-cdk/aws-sns';
-import * as subs from '@aws-cdk/aws-sns-subscriptions';
-import * as lambda from '@aws-cdk/aws-lambda'
-import { NodejsFunction } from '@aws-cdk/aws-lambda-nodejs'
+import { Construct } from 'constructs'
+import * as cdk from 'aws-cdk-lib';
+import * as sns from 'aws-cdk-lib/aws-sns';
+import * as subs from 'aws-cdk-lib/aws-sns-subscriptions';
+import * as lambda from 'aws-cdk-lib/aws-lambda'
+import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs'
 
 export class SesBounceRecorderStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props)
 
     // NOTE: Please set SNS topic subscribe in SES notification manually
@@ -23,7 +24,7 @@ export class SesBounceRecorderStack extends cdk.Stack {
       {
         functionName: `SesBounceRecorder`,
         entry: 'src/lambda/handlers/sesBounceRecorder.ts',
-        runtime: lambda.Runtime.NODEJS_12_X,
+        runtime: lambda.Runtime.NODEJS_16_X,
         timeout: cdk.Duration.seconds(30),
       }
     )
