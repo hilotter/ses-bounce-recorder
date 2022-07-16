@@ -20,7 +20,6 @@
     "aws-cdk": "^2.32.1",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.6",
     "ts-node": "^10.9.1",
