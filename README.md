@@ -32,6 +32,12 @@ Please set SNS topic subscribe in SES notification manually
 
 ![notification](https://user-images.githubusercontent.com/1042519/62696253-ff7bec80-ba12-11e9-9962-4f55d37901f4.png)
 
+## CDK Test
+
+```
+yarn test
+```
+
 ## Lambda Test
 
 use `test/lambda_bounce_event.json`
